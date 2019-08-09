@@ -8,13 +8,13 @@ class App extends React.Component {
 
     this.state = {
       buttonClicked: "",
-      assignments: [] /*Below this line, add the students state variable for step 3*/,
+      assignments: [] /*Below this line, add the students state variable for step 6*/,
       grades: {}
     };
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
     this.addAssignment = this.addAssignment.bind(this);
-    /*Uncomment the line below for step 3*/
+    /*Uncomment the line below for step 8*/
     /*this.addStudent = this.addStudent.bind(this);*/
     this.addGrade = this.addGrade.bind(this);
   }
@@ -25,14 +25,14 @@ class App extends React.Component {
     });
   }
 
-  /*Check out this addAssignment function for step 3*/
+  /*Check out this addAssignment function*/
   addAssignment(assignmentName) {
     this.setState({
       assignments: this.state.assignments.concat(assignmentName)
     });
   }
 
-  /*Write an addStudent function here for step 3*/
+  /*Write an addStudent function here*/
 
   addGrade(assignment, student, score) {
     let grades = this.state.grades;
@@ -48,7 +48,7 @@ class App extends React.Component {
   render() {
     let tabChoice = <div />;
 
-    /*Uncomment below for step 2*/
+    /*Uncomment below for step 4*/
     /*if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
@@ -60,7 +60,7 @@ class App extends React.Component {
       );
     }*/
 
-    /* Change below for step 4*/
+    /* Change below for step 9*/
 
     /*if (this.state.buttonClicked === "students") {
       tabChoice = (
@@ -73,7 +73,7 @@ class App extends React.Component {
       );
     }*/
 
-    /* Uncomment lines below for step 3*/
+    /* Uncomment lines below for step 10*/
     /*if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
